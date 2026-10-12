@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy – Personal Translator for monday.com</title>
+<style>
+  :root {
+    --bg: #ffffff; --ink: #0B0D34; --soft: #555b6e; --line: #DFE1E7; --accent: #3300FF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0B0D34; --ink: #F2F3F8; --soft: #B5B9C9; --line: #2A2D5C; --accent: #9C8CFF; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .meta { color: var(--soft); margin: 0 0 28px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Personal Translator for monday.com · Effective 11 October 2026 ·
+  Published by Babken Grigoryan</p>
+
+<p>Personal Translator for monday.com (“the extension”) shows the names of monday.com
+boards, groups, columns, status labels and workspaces in the language you choose. It
+does this by changing the text displayed in your own browser. It does not change the
+data stored in monday.com. It is an independent tool and is not affiliated with,
+endorsed by or sponsored by monday.com Ltd.</p>
+
+<p><strong>In short:</strong> the extension has no server of its own. It sends nothing
+to its developer, contains no analytics, tracking or advertising, and does not sell or
+share your data. It contacts other services only when you use a feature that needs
+them, and each one is described below.</p>
+
+<h2>What the extension reads</h2>
+<p>On pages at <code>monday.com</code>, the extension reads the text that monday
+displays so it can replace German interface terms with your chosen language. This
+happens inside your browser.</p>
+<p>To help your team complete its dictionary, the extension also keeps a list of short
+untranslated terms it sees in board, group and column headers and in status labels. It
+deliberately skips menus, pickers and people columns, so that names and item data are
+not collected. However, a short piece of text that sits where a label usually sits can
+still end up in the list. That list stays in your browser unless you choose to send it
+somewhere, as described below.</p>
+
+<h2>What is stored on your computer</h2>
+<p>The extension stores the following in your browser’s local extension storage
+(<code>chrome.storage.local</code>). This storage is kept on your device and is not
+synchronised to your Google account.</p>
+<ul>
+  <li>Your settings, such as the display language and whether translation is on.</li>
+  <li>The translation dictionary, and the list of untranslated terms described above.</li>
+  <li>Your name, if you enter it. It is attached to translation suggestions you choose
+      to send.</li>
+  <li>The translation suggestions you have made, and the answers to them.</li>
+  <li>A monday.com API token, only if you are an administrator and connect the
+      extension to a monday board. It is stored unencrypted in local extension storage,
+      and the extension says so when you enter it. “Disconnect token” removes it. A token you
+      enter for a one-off bulk term import is used once and is not stored.</li>
+  <li>An OpenAI API key, only if you use “Translate with AI”. It is remembered after
+      first use so that you do not have to enter it again. The “API key…” button in the
+      translation editor’s settings removes it.</li>
+</ul>
+
+<h2>What leaves your computer, and when</h2>
+<table>
+  <thead><tr><th>Recipient</th><th>When</th><th>What is sent</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>The web address of your team’s shared dictionary</td>
+      <td>If your copy of the extension, or your settings, point to a hosted
+          dictionary. The extension checks it periodically.</td>
+      <td>An ordinary download request for the dictionary file. As with any web
+          request, the server that hosts it can see your IP address and browser
+          details. No personal data is added to the request.</td>
+    </tr>
+    <tr>
+      <td>monday.com (<code>api.monday.com</code>)</td>
+      <td>Only if an administrator connects a monday.com API token (board sync), or
+          runs a bulk term import.</td>
+      <td>Requests made with that token, which read board, group, column and label
+          names, and create or update the one board where the dictionary is kept. No
+          other board is written to.</td>
+    </tr>
+    <tr>
+      <td>OpenAI (<code>api.openai.com</code>)</td>
+      <td>Only when you press “Translate with AI” and confirm. You are shown the list of
+          terms before anything is sent.</td>
+      <td>The German terms to be translated, what kind of term each one is (column,
+          label, and so on), and the name of the board it appears on, sent with your
+          own OpenAI API key. OpenAI’s handling of this data is governed by
+          <a href="https://openai.com/policies/privacy-policy">OpenAI’s policies</a> and
+          your agreement with OpenAI.</td>
+    </tr>
+    <tr>
+      <td>Your email program</td>
+      <td>Only when you choose to send suggestions or answers to your team.</td>
+      <td>The extension opens a draft email, or copies text to your clipboard, containing
+          the terms, your suggestions and your name if you entered it. Nothing is sent
+          until you send the email yourself.</td>
+    </tr>
+  </tbody>
+</table>
+<p>Data sent to monday.com and OpenAI is then subject to those companies’ own privacy
+policies and to the agreements your organisation has with them.</p>
+
+<h2>What the extension does not do</h2>
+<ul>
+  <li>It does not send any data to the developer or to any server operated by the
+      developer.</li>
+  <li>It does not use analytics, tracking pixels, advertising or fingerprinting.</li>
+  <li>It does not read your browsing history or run on websites other than monday.com,
+      apart from fetching the dictionary address described above.</li>
+  <li>It does not sell, rent or transfer your data to anyone, and does not use it for
+      any purpose other than translating what you see on monday.com.</li>
+  <li>It does not use your data to assess creditworthiness or for lending.</li>
+</ul>
+<p>The use of information received by the extension complies with the
+<a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web
+Store User Data Policy</a>, including its Limited Use requirements.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>Data in local extension storage stays on your computer until you delete it.
+Removing the extension from Chrome deletes all of it. You can also remove a stored
+monday.com token with “Disconnect token” and an OpenAI key with the “API key…” button,
+both in the translation editor’s settings. Translations an administrator has saved to the monday.com
+dictionary board are kept in monday.com until someone deletes that board or its
+items.</p>
+
+<h2>Children</h2>
+<p>The extension is a workplace tool for monday.com users and is not directed at
+children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a new version of the extension changes how it handles data, this policy will be
+updated before that version is published, and the effective date above will
+change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or about your data:
+<a href="mailto:babken.grig@gmail.com">babken.grig@gmail.com</a>.</p>
+
+</main>
+</body>
+</html>
